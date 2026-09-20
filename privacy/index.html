@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | フリセド</title>
+<meta name="description" content="フリセドのプライバシーポリシー。記録は端末の中に保存され、当方のサーバーへは送られません。">
+<link rel="canonical" href="https://furisedo.com/privacy/">
+<style>
+  :root {
+    --yamabuki: #D9930D;
+    --sumi: #221F1A;
+    --kinari: #FAF7F0;
+    --text: #221F1A;
+    --text-sub: #5E574D;
+    --line: #E7E0D2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+    background: var(--kinari);
+    color: var(--text);
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  header {
+    background: var(--sumi);
+    color: var(--kinari);
+    padding: 28px 20px;
+  }
+  header .inner, main { max-width: 760px; margin: 0 auto; }
+  header a { color: var(--yamabuki); text-decoration: none; font-size: 14px; }
+  header a:hover { text-decoration: underline; }
+  header h1 { font-size: 22px; margin-top: 6px; }
+  main { padding: 32px 20px 64px; }
+  .meta {
+    font-size: 13px;
+    color: var(--text-sub);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  .lead {
+    background: #fff;
+    border-left: 5px solid var(--yamabuki);
+    padding: 16px 18px;
+    margin-bottom: 32px;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 17px;
+    margin: 36px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yamabuki);
+  }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  p, li { font-size: 15px; }
+  ul { margin: 8px 0 8px 1.3em; }
+  li { margin-bottom: 8px; }
+  a { color: #A06A05; }
+  .note { font-size: 13px; color: var(--text-sub); }
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 48px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: var(--text-sub);
+  }
+  footer a { color: #A06A05; }
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <a href="/">フリセド</a>
+    <h1>プライバシーポリシー</h1>
+  </div>
+</header>
+<main>
+  <p class="meta">制定日：2026年9月21日</p>
+
+  <p class="lead">
+    「フリセド」（以下「本アプリ」）は、MTP Works（以下「当方」）が提供する、フリマ販売の損益管理アプリです。<br>
+    <strong>あなたの記録は端末の中に保存され、当方のサーバーへ送られることはありません。</strong>
+    当方は利用者のデータを預かっておらず、アカウント登録もありません。
+  </p>
+
+  <h2>1. 端末の中だけに保存される情報</h2>
+  <p>以下の情報は、すべてお使いの端末の中だけに保存されます。当方を含む外部へ送信されることはありません。</p>
+  <ul>
+    <li><strong>記録データ</strong>：あなたが入力・取り込んだ記録（商品名・金額・日付・販路・メモなど）は、端末内のデータベースに保存されます</li>
+    <li><strong>写真</strong>：記録に添付した写真は、<strong>縮小したコピー</strong>（長辺1600px）だけをアプリ専用の領域に保存します。保存の際に画像を作り直すため、撮影場所などのExif情報も残りません。元の画像には手を加えません</li>
+    <li><strong>スクリーンショット取込（OCR）</strong>：あなたが選んだ画像の文字認識は、端末の中で行われます。画像そのものが外部へ送信されることはありません（第2条もあわせてご覧ください）</li>
+    <li><strong>取引相手の情報</strong>：本アプリは、取引相手の氏名・ニックネームを保存する項目を持っていません。他のアプリから記録を取り込むときも、これらは取り込みません</li>
+  </ul>
+  <p class="note">
+    本アプリはOSの自動バックアップを無効にしています。記録データが、あなたの操作なしにクラウドへ保存されることはありません。
+    機種変更に備えるときは、設定画面からJSONバックアップを書き出してください。
+  </p>
+
+  <h2>2. 本アプリに関わる通信</h2>
+
+  <h3>(1) 文字認識（OCR）に使うML Kitについて</h3>
+  <p>
+    本アプリは、スクリーンショットの文字認識に Google の「ML Kit」を使用しています。認識の処理は端末の中で完結します。
+  </p>
+  <ul>
+    <li><strong>あなたが選んだ画像と、その認識結果が Google へ送信されることはありません。</strong>ML Kit の規約は、端末内で処理を行うAPIについて「入力データと出力結果を Google のサーバーへ送信しない」と定めています</li>
+    <li>一方で、<strong>ML Kit は、APIの性能と利用状況に関する指標（メトリクス）を Google へ送信します。</strong>Google はこれを、APIの性能の測定・不具合の調査・保守・改善、および不正利用の検知のために使用します。この送信を停止する設定は提供されていないため、本アプリでもここでお知らせしています</li>
+    <li>詳細は Google の <a href="https://developers.google.com/ml-kit/terms" rel="noopener">ML Kit 利用規約・プライバシー</a> をご覧ください</li>
+  </ul>
+
+  <h3>(2) お問い合わせ（メールアプリの起動）</h3>
+  <p>
+    設定画面の「要望・フィードバック」「不具合の報告」を押すと、端末のメールアプリが開きます。本文にはあらかじめ
+    <strong>アプリの版・Androidの版・機種名</strong>の3行が入ります。状況を調べるために使うもので、記録の中身は入りません。
+    実際に送信するかどうか、何を書くかは、あなたが決めます。
+  </p>
+
+  <h2>3. アプリが利用する権限</h2>
+  <ul>
+    <li><strong>インターネット通信</strong>：第2条(1)のML Kitが使用します。本アプリ自身が、あなたの記録を送信する通信を行うことはありません</li>
+    <li><strong>写真</strong>：OSの写真選択画面を利用するため、写真ライブラリ全体へのアクセス権限は要求しません。<strong>あなたが選んだ画像だけ</strong>が本アプリに渡ります</li>
+  </ul>
+
+  <h2>4. 第三者提供・広告・アクセス解析</h2>
+  <ul>
+    <li>当方は利用者のデータを保有していないため、第三者へ提供・販売することはありません</li>
+    <li>本アプリは<strong>広告を配信しません</strong>。広告SDKおよびアクセス解析SDKは使用していません</li>
+    <li>アカウント登録の仕組みはありません。氏名・メールアドレス・電話番号をお預かりすることもありません</li>
+  </ul>
+
+  <h2>5. データの管理はあなたの手に</h2>
+  <ul>
+    <li>記録データは、CSVエクスポートおよびJSONバックアップとして、いつでも無料で全件書き出せます</li>
+    <li>JSONバックアップに画像そのものは含まれません（記録との紐づけ情報のみ保存されます）。別の端末で復元した場合、写真は表示されません</li>
+    <li>書き出したファイルには記録の中身が入ります。他の人に渡すときはご注意ください</li>
+    <li>アプリをアンインストールすると、端末内の記録データと写真は削除されます。必要な場合は事前に書き出してください</li>
+  </ul>
+
+  <h2>6. 他のアプリからの取り込み</h2>
+  <p>
+    他のアプリで書き出したファイル（JSON・CSV）から、販売・出品の記録を取り込めます。読み込むのは、あなたが選んだファイルだけです。
+    <strong>取引相手の氏名・ニックネーム、仕入先、商品ページのURL、独自の商品コード、インボイス番号は取り込みません</strong>（保存もログへの出力も行いません）。
+  </p>
+
+  <h2>7. 将来の機能について</h2>
+  <p>
+    今後、通信を伴う機能を追加する場合は、必ず利用者が自分でオンにする方式（オプトイン）とし、
+    事前に本ポリシーを改定してアプリ内でお知らせします。利用者の同意なく、既存のデータが外部へ送信されることはありません。
+  </p>
+
+  <h2>8. ポリシーの改定</h2>
+  <p>本ポリシーを改定する場合は、本ページで公表します。重要な変更がある場合は、アプリ内でもお知らせします。</p>
+
+  <h2>9. お問い合わせ</h2>
+  <ul>
+    <li>事業者：MTP Works</li>
+    <li>連絡先：<a href="mailto:info@furisedo.com">info@furisedo.com</a></li>
+    <li>取り込めなかったスクリーンショットをお送りいただいた場合、取込機能の修正にのみ使用し、修正の完了後にメールと画像を削除します</li>
+  </ul>
+
+  <footer>
+    制定日：2026年9月21日／最終改定日：2026年9月21日<br>
+    <a href="/">トップ</a>　<a href="/disclaimer/">免責事項</a>
+  </footer>
+</main>
+</body>
+</html>
