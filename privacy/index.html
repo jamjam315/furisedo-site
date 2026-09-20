@@ -107,7 +107,17 @@
   <ul>
     <li><strong>あなたが選んだ画像と、その認識結果が Google へ送信されることはありません。</strong>ML Kit の規約は、端末内で処理を行うAPIについて「入力データと出力結果を Google のサーバーへ送信しない」と定めています</li>
     <li>一方で、<strong>ML Kit は、APIの性能と利用状況に関する指標（メトリクス）を Google へ送信します。</strong>Google はこれを、APIの性能の測定・不具合の調査・保守・改善、および不正利用の検知のために使用します。この送信を停止する設定は提供されていないため、本アプリでもここでお知らせしています</li>
-    <li>詳細は Google の <a href="https://developers.google.com/ml-kit/terms" rel="noopener">ML Kit 利用規約・プライバシー</a> をご覧ください</li>
+    <li>Google が公表している送信項目は次のとおりです。<strong>あなたが記録した内容や、選んだ画像は含まれません。</strong>
+      <ul>
+        <li>デバイス情報（メーカー・機種・OSのバージョンとビルド）</li>
+        <li>アプリ情報（パッケージ名・アプリのバージョン）</li>
+        <li>インストールごとの識別子（利用者個人を特定する目的のものではありません）</li>
+        <li>性能の指標（処理にかかった時間など）、APIの設定（画像の形式・解像度など）、入出力のサイズ、機能のバージョン</li>
+        <li>イベントの種類（機能の初期化・検出・リソースの解放など）とエラーコード</li>
+      </ul>
+    </li>
+    <li>これらは<strong>HTTPSで暗号化して送信</strong>され、<strong>第三者と共有されません</strong></li>
+    <li>詳細は Google の <a href="https://developers.google.com/ml-kit/terms" rel="noopener">ML Kit 利用規約・プライバシー</a> と <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">ML Kit のデータ開示</a> をご覧ください</li>
   </ul>
 
   <h3>(2) お問い合わせ（メールアプリの起動）</h3>
