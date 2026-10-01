@@ -4,10 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>フリセド | フリマ・せどりの損益管理</title>
-<meta name="description" content="フリセド（フリマ・せどりの損益管理）の案内ページです。">
-<!-- 正式公開まで検索結果に出さない（plan.md §9「事前告知・SNS発信をしない」）。
-     公開時にこの行を消し、ストアリンクを入れる。 -->
-<meta name="robots" content="noindex">
+<meta name="description" content="フリセドは、フリマ販売の出品・売上・在庫（棚卸）・経費をまとめて管理するAndroidアプリです。">
 <link rel="canonical" href="https://furisedo.com/">
 <style>
   :root {
@@ -42,13 +39,17 @@
   .tagline { font-size: 17px; color: var(--text-sub); margin-top: 6px; }
   .pitch { font-size: 16px; margin-top: 28px; }
   .store {
+    display: inline-block;
     margin-top: 36px;
-    padding: 18px 20px;
-    border: 2px dashed var(--line);
-    border-radius: 12px;
-    font-size: 14px;
-    color: var(--text-sub);
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: var(--yamabuki);
+    color: var(--sumi);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
   }
+  .store:hover { background: #C2820B; }
   nav { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px 24px; }
   nav a {
     color: var(--sumi);
@@ -77,9 +78,7 @@
   <h1>フリセド</h1>
   <p class="tagline">フリマ・せどりの損益管理</p>
 
-  <p class="store">
-    Google Play で公開の準備中です。公開後、ここにリンクを掲載します。
-  </p>
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.furisedo.app">Google Play で入手</a>
 
   <nav>
     <a href="/privacy/">プライバシーポリシー</a>
