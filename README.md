@@ -15,4 +15,4 @@ GitHub Pages で <https://furisedo.com/> に公開している。
 - 免責事項は**アプリ内の「設定 → 免責事項」と同じ文言**。正本はこのサイトで、アプリ側は写し
   （`furima` の `lib/domain/legal_text.dart`）。**片方だけ直さないこと**
 - ビルド工程は無い。HTMLを直して `main` に push すれば反映される
-- **`app-ads.txt` は場所と名前を変えない**（AdMob がこの URL を読みに来る）。中身は1行で、JAM の指定のまま
+- **`app-ads.txt` は場所と名前を変えない**（AdMob がこの URL を読みに来る）。中身は JAM の指定の行だけ（2026-11-01 に2行目を足した。既存の行は消さない）
